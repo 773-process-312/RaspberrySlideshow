@@ -1,0 +1,25 @@
+Step 1:
+  Upload the images in either .jpg .jpg or .tiff format to the /home/pi//Pictures/ directory 
+
+Step 2:
+  Install the feh package on to your RasPI
+    sudo apt install feh -y
+
+Step 3:
+  After installation here is the command to get you started
+    feh -qrYzFD120 /home/pi/Pictures/
+
+-q = quiet mode 
+-r = recursive ( that means use all files in this directory
+-Y = hide the pointer
+-z = randomize (the photos will be random)
+-F = full screen
+-D<time> = delay of x amount of seconds before proceeding to the next image
+--zoom <parameter> = fill the display with image (people sometimes use -zoom fill , but it doesn't do well with large images all the time)
+    Example:  feh -qrYzFD120 --zoom fill /home/pi/Pictures/
+    
+Step 4:
+  Resolving this common error "feh ERROR: Can't open X display.  It *is* running, yeah? "
+  
+  To resolve this error type this in to the terminal :
+    export DISPLAY=:0
