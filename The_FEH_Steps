@@ -23,3 +23,5 @@ Step 4:
   
   To resolve this error type this in to the terminal :
     export DISPLAY=:0
+
+If you do this from the PI itself , using the up and down arrows , you can manually controll the zoom 
